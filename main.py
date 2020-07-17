@@ -1,6 +1,14 @@
-user_input = int(input("The input is... " ))
-user_info = str(input("Give me an input... "))
+V = ("a","e","i","o","u")
 
-for i in range(user_input):
-  print(user_info)
-  
+I = str(input("The word is..."))
+
+uI = I.lower()
+
+print(uI)
+
+for i in range(len(I)):
+  if I[i] in V:
+    print(I[i], " : Vowel")
+  else:
+    print(I[i], " : Consonant")
+
